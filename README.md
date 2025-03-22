@@ -10,11 +10,11 @@ A feature-rich resume builder application built with Angular, featuring an Amazo
 - **Modular Architecture**: Lazy-loaded modules for scalability and performance optimization.
 - **Animations**: Smooth fade-in effects for a polished user experience.
 - **Responsive Design**: Adapts to various screen sizes, inspired by Amazon’s layout.
-- **Type Safety**: Strongly typed TypeScript with explicit array function typing (e.g., `.forEach((x: Type) => {})`).
-
+- **Type Safety**: Strongly typed TypeScript with explicit array function typing.
+  
 ## Tech Stack
 
-- **Angular**: Frontend framework (v17+ assumed based on current date: March 21, 2025).
+- **Angular**: Frontend framework (v17+).
 - **TypeScript**: For type-safe coding.
 - **SCSS**: For styling with Amazon-like aesthetics.
 - **RxJS**: Reactive programming with Observables for state management.
@@ -31,7 +31,7 @@ A feature-rich resume builder application built with Angular, featuring an Amazo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/<your-username>/angular-resume-builder.git
+git clone https://github.com/vasudeva-rao/angular-resume-builder.git
 cd angular-resume-builder
 npm install
 ```
@@ -58,7 +58,7 @@ Open your browser at http://localhost:4200.
 ## Deployment
 Deploy to GitHub Pages for a live demo:
 ```
-ng build --base-href "https://<your-username>.github.io/angular-resume-builder/"
+ng build --base-href "https://vasudeva-rao.github.io/angular-resume-builder/"
 npm install -g angular-cli-ghpages
 ng deploy
 ```
