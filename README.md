@@ -1,27 +1,80 @@
-# AngularResumeBuilder
+# Angular Resume Builder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+A feature-rich resume builder application built with Angular, featuring an Amazon-inspired template design. This project demonstrates advanced Angular concepts, including reactive forms, lazy loading, local storage management, and more. It’s designed to help users create, save, and display resumes in a creative and professional way, with scalability for future template additions.
 
-## Development server
+![Angular Resume Builder Screenshot](https://via.placeholder.com/800x400.png?text=Angular+Resume+Builder+Preview)  
+*(Replace with an actual screenshot of your app once deployed!)*
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Resume Creation**: Build resumes using a dynamic, validated reactive form.
+- **Amazon-Style Template**: Display resumes in a design mimicking Amazon product pages, complete with star ratings for skills and experience.
+- **Storage Management**: Save and manage multiple resumes using LocalStorage with CRUD operations.
+- **Modular Architecture**: Lazy-loaded modules for scalability and performance optimization.
+- **Animations**: Smooth fade-in effects for a polished user experience.
+- **Responsive Design**: Adapts to various screen sizes, inspired by Amazon’s layout.
+- **Type Safety**: Strongly typed TypeScript with explicit array function typing (e.g., `.forEach((x: Type) => {})`).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
 
-## Build
+- **Angular**: Frontend framework (v17+ assumed based on current date: March 21, 2025).
+- **TypeScript**: For type-safe coding.
+- **SCSS**: For styling with Amazon-like aesthetics.
+- **RxJS**: Reactive programming with Observables for state management.
+- **LocalStorage**: Persistent storage of resume data.
+- **Angular Animations**: For UI transitions.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Prerequisites
 
-## Running unit tests
+- **Node.js**: v18.x or later (download from [nodejs.org](https://nodejs.org/)).
+- **Angular CLI**: Install globally with `npm install -g @angular/cli`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+Clone the repository and install dependencies:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone https://github.com/<your-username>/angular-resume-builder.git
+cd angular-resume-builder
+npm install
+```
 
-## Further help
+## Run the application:
+```
+ng serve
+```
+Open your browser at http://localhost:4200.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+1. Create a Resume:
+  Navigate to the /form route.
+  Fill out the form with your details (name, title, skills, experience, etc.).
+  Click "Generate Resume" to save and view your resume.
+
+2. View Saved Resumes:
+  Go to the /list route to see all saved resumes.
+  Click "View" to display a resume or "Delete" to remove it.
+
+3. Display Resume:
+  The /resume route shows the selected resume in the Amazon-style template.
+
+## Deployment
+Deploy to GitHub Pages for a live demo:
+```
+ng build --base-href "https://<your-username>.github.io/angular-resume-builder/"
+npm install -g angular-cli-ghpages
+ng deploy
+```
+
+## Tech
+Angular: Reactive Forms, Routing, Lazy Loading, Animations.
+TypeScript: Strong typing and interface usage.
+RxJS: Observables for reactive state management.
+Frontend Design: SCSS styling with a focus on responsive, Amazon-like UI.
+Best Practices: Lifecycle hooks (ngOnDestroy for cleanup), modular architecture, and clean code.
+
+## Future Enhancements
+Add more templates (e.g., Minimal, Modern) via the TemplateService.
+Integrate a backend (e.g., Firebase) for cloud storage.
+Implement drag-and-drop reordering of skills/experience.
+Add export functionality (e.g., PDF generation).
