@@ -2,9 +2,6 @@
 
 A feature-rich resume builder application built with Angular, featuring an Amazon-inspired template design. This project demonstrates advanced Angular concepts, including reactive forms, lazy loading, local storage management, and more. It’s designed to help users create, save, and display resumes in a creative and professional way, with scalability for future template additions.
 
-![Angular Resume Builder Screenshot](https://via.placeholder.com/800x400.png?text=Angular+Resume+Builder+Preview)  
-*(Replace with an actual screenshot of your app once deployed!)*
-
 ## Features
 
 - **Resume Creation**: Build resumes using a dynamic, validated reactive form.
